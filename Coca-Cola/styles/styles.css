@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.header {
+  display: flex;
+  width: 99vw;
+  height: 7.5vh;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  background: cover;
+}
+.navLines {
+  margin-left: 1.9rem;
+}
+.cokeLogo {
+  max-width: 200px;
+}
+.cokeSearch {
+  max-width: 30px;
+  margin-right: 2.5rem;
+}
+.parentContainer {
+  width: 99vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  line-height: 2.5rem; 
+  /* font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2.5rem; */  
+}
+.parentContainer h5 {
+  color: rgb(255, 255, 255);
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 800;
+  font-size: 3.2rem;
+}
+.childContainer1 {
+  display: flex;
+  width: 100vw;
+  height: 76%;
+  /*border: 1px solid black;*/
+  background: url(https://www.coca-cola.com.ar/content/dam/one/ar/es/promociones/Home_1600x600-header-banner-desktop01.jpg);
+  background-size: cover;
+  align-items: center;
+}
+.childContainerBrands {
+  display: flex;
+  width: 100vw;
+  height: 68%;
+  /*border: 1px solid black;*/
+  background: url(https://www.coca-cola.com.ar/content/dam/one/ar/es/homepage/brands/Home-Argentina_1440x480-brands.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.childContainerDiversity {
+  display: flex;
+  width: 49.5vw;
+  height: 43%;
+  /*border: 1px solid black;*/
+  background: url(https://www.coca-cola.com.ar/content/dam/one/ar/es/homepage/diversity-and-inclusion/Home-argentina_760x320-diversity.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.childContainerSustent {
+  display: flex;
+  width: 49.5vw;
+  height: 43%;
+  /*border: 1px solid black;*/
+  background: url(https://www.coca-cola.com.ar/content/dam/one/ar/es/homepage/diversity-and-inclusion/Home-argentina_760x320-sustainability.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.childContainerHome {
+  display: flex;
+  width: 100vw;
+  height: 75%;
+  /*border: 1px solid black;*/
+  background: url(https://www.coca-cola.com.ar/content/dam/one/ar/es/homepage/ccth-argentina/Home-argentina_1440x480-CCTH.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.childContainerArgentina {
+  display: flex;
+  width: 100vw;
+  height: 85%;
+  /*border: 1px solid black;*/
+  background: url(https://www.coca-cola.com.ar/content/dam/one/ar/es/homepage/cc-en-argentina/Home-argentina_760x320-In-colombia-09.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.childContainerDiv {
+  display: flex;
+  width: 100vw;
+  height: 5%;
+  /*border: 1px solid black;*/
+}
+.childContainerWork {
+  display: flex;
+  width: 33vw;
+  height: 70%;
+  /*border: 1px solid black;*/
+  background: url(https://www.coca-cola.com.ar/content/dam/one/ar/es/homepage/circles/Home-argentina_600x600-work-with-us.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-justify: inter-word;
+}
+.childContainerNews {
+  display: flex;
+  width: 33vw;
+  height: 70%;
+  /* border: 1px solid black; */
+  background: url(https://www.coca-cola.com.ar/content/dam/one/ar/es/homepage/circles/Home-argentina_600x600-News.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.childContainerContact {
+  display: flex;
+  width: 33vw;
+  height: 70%;
+  /*border: 1px solid black;*/
+  background: url(https://www.coca-cola.com.ar/content/dam/one/ar/es/homepage/circles/Home-Argentina_600x600-contact-us.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.childContainerLinks {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;  
+  box-sizing: content-box;
+  margin-left: 0%;  
+}
+.childContainerLinks p {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color: #000000;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  padding-bottom: 0%;
+  margin-bottom: 0;
+  margin-top: 15%;    
+}
+hr {
+  display: flex;
+  width: 60vw;
+  height: 2px;
+  border: 1px;
+  border-top: 1px solid rgb(243, 6, 6);
+  margin: 0.02em 0;
+  padding: 1px;
+}
+.childContainerSocialmedia {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;  
+}
+.childContainerSocialmedia img {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+.footerLogo {
+  display: flex;
+  width: 99vw;
+  background-color: black;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+.footerLogo img {
+  max-width: 250px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.childContainerfooter {
+  width: 49.5vw;
+  display: flex;
+  background-color: #000000;
+  background-size: cover;
+  color: #e2e2e2;
+  padding-left: 7%;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.9rem;    
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style:none;
+}
+ul li{
+  display:inline-block; 
+  padding:0 0.6rem; 
+  position:relative;  
+}
+ul li:not(:last-child)::after{
+  content:""; 
+  border: 0.2px solid #e2e2e2;
+  border-width: 1px 1px 0 0;
+  position:absolute; 
+  right:-3px; 
+  top: 13px; 
+  height: 30%;
+}
+.childContainerRights {
+  display: flex;
+  width: 49.5vw;
+  justify-content: flex-end;
+  background-color: #000000;
+  color: white;
+  padding-right: 5%;
+  padding-bottom: 2rem;
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 0.9rem;  
+}
