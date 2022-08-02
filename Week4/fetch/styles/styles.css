@@ -1,0 +1,60 @@
+body {
+  margin: 0%;
+}
+#fetch-petition {
+  display: flex;
+  position: relative;
+  background-color: #f9f1f0;
+  flex-wrap: wrap;
+  border: 1px solid rgb(60, 17, 179);
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+  margin: 2% 0 0 2%;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fadcd9;
+  border: solid 2px #f8afa6;
+  border-radius: 10px;
+}
+.cardsTitle {
+  color: #67595e;
+  text-transform: capitalize;
+}
+.showStatus {
+  position: absolute;
+  display: block;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 98%;
+  width: 98%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #fadcd9;
+  border-radius: 10px;
+}
+.card:hover .showStatus {
+  opacity: 1;
+}
+.card:hover .overlayStatus {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
