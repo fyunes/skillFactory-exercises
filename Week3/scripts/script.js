@@ -1,21 +1,23 @@
-// const firstNum = parseInt(prompt("ingrese un número"));
-// const secondNum = parseInt(prompt("ingrese otro número"));
+// const firstNum = parseInt(prompt('ingrese un número'));
+// const secondNum = parseInt(prompt('ingrese otro número'));
 
 
 // if (firstNum && secondNum === typeof (Number)) {
 // } else if (firstNum > secondNum) {
-//   console.log("El número mas grande es: " + firstNum);
+//   console.log('El número mas grande es: ' + firstNum);
 // } else if (firstNum < secondNum) {
-//   console.log("El número mas grande es: " + secondNum);
+//   console.log('El número mas grande es: ' + secondNum);
+// } else if (firstNum == secondNum) {
+//   console.log('Son iguales');
 // } else {
-//   console.log("dato NO válido");
+//   console.log('dato NO válido');
 // };
 
-const firstNum = parseInt(prompt("ingrese un número"));
-const secondNum = parseInt(prompt("ingrese otro número"));
+const firstNum = parseInt(prompt('ingrese un número'));
+const secondNum = parseInt(prompt('ingrese otro número'));
 
 if (Number.isNaN(firstNum) || Number.isNaN(secondNum)) {
-  console.log("Ingrese solo números");
+  console.log('Ingrese solo números');
 }
 else if (firstNum > secondNum) {
   console.log(`%cEl número mas grande es: ${firstNum}`, 'color: #da55cd; font-size: 20px; font-weight: bold;');
@@ -27,26 +29,26 @@ else {
   console.log(`%cLos números son iguales.`, 'color: #da55cd; font-size: 20px; font-weight: bold;');
 };
 console.log('');
-console.log('%cA continuación comienza la practica con algunos metodos de arrays', 'color: #5569da; font-size: 22px; ');
+console.log('%cA continuación comienza la práctica con algunos métodos de arrays', 'color: #5569da; font-size: 22px; ');
 console.log('');
-const skillers = ["Rolo", "Javi", "Mel", "Ezequiel", "Max"];
+const skillers = ['Rolo', 'Javi', 'Mel', 'Ezequiel', 'Max'];
 
 // const mayusSkillers = skillers.map(skillers => skillers.toUpperCase());
 // console.log(`Skillers en Mayuscula: ${mayusSkillers}`);
 
-console.log('%cEste es el metodo .length 📜', 'color: #f4d714; font-size: 15px; ');
+console.log('%cEste es el metodo .length 📜', 'color: #f4d714; font-size: 15px;');
 // const totalSkillers = skillers.length (Quité la variable)
 console.log(`Cantidad de Skillers: ${skillers.length}`);
 
-console.log('%cEste es el metodo .slice 📜', 'color: #f4d714; font-size: 15px; ');
-console.log(`Solo quedó ${skillers.slice(3, 4)}`);
+console.log('%cEste es el metodo .slice 📜', 'color: #f4d714; font-size: 15px;');
+console.log(`Solo quedó ${skillers.slice(1, 6)}`);
 
 console.log('%cEste es el metodo .reverse 📜', 'color: #f4d714; font-size: 15px' );
 const skillersBackwards = skillers.reverse();
 console.log(`Skillers al reves: ${skillersBackwards}`);
 
 console.log('%cEste es el metodo .push 📜', 'color: #f4d714; font-size: 15px');
-const newSkillers = skillers.push("Fer", "Marina", "Matias");
+const newSkillers = skillers.push('Fer', 'Marina', 'Matias');
 console.log(`Total skillers Now: ${newSkillers}`);
 console.log(skillers);
 
@@ -60,15 +62,15 @@ console.log(`Con shift eliminamos a... ${removeFirstSkiller}`); // con shift eli
 console.log(`Así quedó el array por ahora.. ${skillers}`);
 
 console.log('%cEste es el metodo .unshift 📜', 'color: #f4d714; font-size: 15px');
-const addTwoSkillers = skillers.unshift("Matias", "Leila");
-console.log(`Se unen nuevos skillers al principio de la clase" ${skillers} `); // se agregan dos elementos al principio del array
+const addTwoSkillers = skillers.unshift('Matias', 'Leila');
+console.log(`Se unen nuevos skillers al principio de la clase' ${skillers}`); // se agregan dos elementos al principio del array
 console.log(`El total hasta ahora es de ${addTwoSkillers} `);
 
 console.log('%cEste es el metodo .join 📜', 'color: #f4d714; font-size: 15px');
-console.log(`Vamos a separar el array con asteriscos ${skillers.join('*')} `);
+console.log(`Vamos a separar el array con asteriscos ${skillers.join('*')}`);
 
 console.log('%cEste es el metodo .concat 📜', 'color: #f4d714; font-size: 15px');
-const darkSideSkillers = ["Agustin", "Sofia", "Adrian", "Guillermo", "Alan"];
+const darkSideSkillers = ['Agustin', 'Sofia', 'Adrian', 'Guillermo', 'Alan'];
 const lotOfskillers = skillers.concat(darkSideSkillers);
 console.log(`Se agrando nuestra plantilla a:  ${lotOfskillers} `); //juntamos dos arrays y obtenemos uno nuevo
 
@@ -77,11 +79,11 @@ console.log(`Estos son los skillers antes de usar el metodo sort:%c ${skillers}`
 console.log(`Veamos como queda luego de utilizarlo:%c ${skillers.sort()}`,  'color: #6bda55');
 
 console.log('%cEste es el metodo .flat', 'color: #f4d714; font-size: 15px');
-const skillersToFlat = ["Rolo", "Javi", ["Mel", "Ezequiel", ["Max"]]]; // quita el array que le sigue menos profundo, por indice comenzando del 1.
+const skillersToFlat = ['Rolo', 'Javi', ['Mel', 'Ezequiel', ['Max']]]; // quita el array que le sigue menos profundo, por indice comenzando del 1.
 console.log(skillersToFlat.flat(1));
 
 // console.log('%cEste es el metodo .from 📜', 'color: #f4d714; font-size: 15px'); 
-// console.log(Array.from([skillers], skillers => skillers + ". Volvemos a empezar, " + skillers)); //esto no tiene ningun sentido, solo es práctica
+// console.log(Array.from([skillers], skillers => skillers + '. Volvemos a empezar, ' + skillers)); //esto no tiene ningun sentido, solo es práctica
 
 console.log('%cEste es el metodo .some', 'color: #f4d714; font-size: 15px'); //Si algun componente del array es menor a 4 devuelve true, sino, false (esperado: true)
 const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
